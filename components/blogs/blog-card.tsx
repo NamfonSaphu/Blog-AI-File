@@ -2,9 +2,11 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Button } from "@/components/ui/button"
 import { CalendarIcon } from "lucide-react"
 import Link from 'next/link'
+import Footer from "@/components/blogs/footer";
 
 export default function BlogCard() {
   return (
+
     <div className="min-h-screen flex flex-col">
       <main className="flex-1 flex flex-col items-center justify-start p-4">
         <Card className="w-full max-w-md">
@@ -25,10 +27,11 @@ export default function BlogCard() {
           </CardContent>
           <CardFooter>
             <Button asChild>
-              <Link href="/detail-file">Read Me</Link>
+              <Link href="/detail-file">Read More</Link>
             </Button>
           </CardFooter>
         </Card>
+        <Footer />
       </main>
     </div>
 

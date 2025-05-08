@@ -2,6 +2,7 @@ import { Card, CardContent, CardTitle } from "@/components/ui/card"
 import Image from 'next/image'
 import LightMode from '@/assets/light.png'
 import DarkMode from '@/assets/dark.png'
+import Footer from "@/components/blogs/footer";
 
 export default function DetailBlog() {
     return (
@@ -40,6 +41,7 @@ export default function DetailBlog() {
                         A modern AI-powered file analyzer built with Next.js and styled using Shadcn UI. This project leverages the Vercel AI SDK and integrates with AI v0 to deliver smart, efficient, and visually appealing user experiences. Users can upload files, interact with AI for insights, and enjoy a seamless interface optimized for performance and clarity.
                     </p>
                 </div>
+                <Footer />
             </main>
         </div>
     )

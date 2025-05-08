@@ -1,20 +1,23 @@
+import { ImGithub } from "react-icons/im";
+import { ImLinkedin } from "react-icons/im";
+import { FaFacebook } from "react-icons/fa";
+
+
 export default function Footer() {
-    return (
-        <footer className="py-6 border-t">
-        <div className="container flex flex-col items-center justify-center gap-2 text-center">
-          <p className="text-sm text-muted-foreground">© 2025 My Blog. All rights reserved.</p>
-          <div className="flex items-center gap-4">
-            <a href="#" className="text-sm text-muted-foreground hover:underline">
-              Privacy Policy
-            </a>
-            <a href="#" className="text-sm text-muted-foreground hover:underline">
-              Terms of Service
-            </a>
-            <a href="#" className="text-sm text-muted-foreground hover:underline">
-              Contact
-            </a>
-          </div>
-        </div>
-      </footer>
-    )
+  return (
+    <div className="flex items-center gap-4">
+      <a href="https://github.com/namfonsaphu" className="flex items-center gap-1 text-sm text-muted-foreground hover:underline">
+        <ImGithub className="text-base" />
+        Github
+      </a>
+      <a href="https://www.linkedin.com/in/namfon-saphu/" className="flex items-center gap-1 text-sm text-muted-foreground hover:underline">
+        <ImLinkedin  className="text-base" />
+        Linkedin
+      </a>
+      <a href="https://www.facebook.com/nanphon.sauphoo.5" className="flex items-center gap-1 text-sm text-muted-foreground hover:underline">
+        <FaFacebook  className="text-base" />
+        Facebook
+      </a>
+    </div>
+  );
 }

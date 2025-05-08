@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar"
-import Footer from "@/components/blogs/footer"
 import DetailBlog from "@/components/details/detail-blog"
 
 export default function page() {
@@ -7,7 +6,6 @@ export default function page() {
         <>
         <Navbar />
         <DetailBlog />
-        <Footer />
         </>
         
     )

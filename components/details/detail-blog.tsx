@@ -2,6 +2,7 @@ import { Card, CardContent, CardTitle } from "@/components/ui/card"
 import Image from 'next/image'
 import LightMode from '@/assets/light.png'
 import DarkMode from '@/assets/dark.png'
+import Answer from '@/assets/answer.png'
 import Footer from "@/components/blogs/footer";
 
 export default function DetailBlog() {
@@ -33,6 +34,32 @@ export default function DetailBlog() {
                         </CardContent>
                         <CardTitle className="p-4 text-center">Dark Mode</CardTitle>
                     </Card>
+                    <Card className="w-full">
+                        <CardContent>
+                            <Image
+                                src={Answer}
+                                alt="Dark Mode"
+                                width={500}
+                                height={500}
+                                className="w-full h-auto object-cover"
+                            />
+                        </CardContent>
+                        <CardTitle className="p-4 text-center">Answer</CardTitle>
+                    </Card>
+                    <Card className="w-full">
+                        <CardContent className="aspect-video">
+                            <iframe
+                                src="https://www.youtube.com/embed/_jFbBeCD_uw"
+                                title="YouTube video"
+                                className="w-full h-full rounded-xl"
+                                frameBorder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowFullScreen
+                            ></iframe>
+                        </CardContent>
+                        <CardTitle className="p-4 text-center">Overview</CardTitle>
+                    </Card>
+
                 </div>
 
                 <div className="mt-10 p-5 max-w-3xl text-center">
